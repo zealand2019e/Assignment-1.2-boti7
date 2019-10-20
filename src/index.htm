@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>String manipulations</title>
+  <link rel="stylesheet" type="text/css" href="bundle.css">
+</head>
+
+<body>
+  <div id="content">
+    <h1>String manipulations</h1>
+    <form id="input-form" autocomplete="off">
+      <input type="text" id="input-string" />
+      <select id="mode-selector">
+        <option value="Upper">Upper case</option>
+        <option value="Lower">Lower case</option>
+      </select>
+      <input type="submit" value="Convert" />
+    </form>
+    <div id="last-result"></div>
+    <div id="results"></div>
+  </div>
+
+  <template id="result-line-template">
+    <div class="result-line">
+      <div class="result-id"></div>
+      <div class="result-value"></div>
+    </div>
+  </template>
+    
+  <script src="bundle.js"></script>
+</body>
+</html>

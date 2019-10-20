@@ -1,0 +1,47 @@
+$colorHeading: #be4a14;
+$colorLineEven: #eff0f1;
+$colorLineOdd: #e7e8e9;
+
+html, body {
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  color: $colorHeading;
+}
+
+#content {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#last-result {
+  height: 20px;
+  margin: 20px 0;
+}
+
+#results {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.result-line {
+  padding: 10px;
+  overflow: hidden;
+}
+.result-line:nth-child(even) {
+  background-color: $colorLineEven;
+}
+.result-line:nth-child(odd) {
+  background-color: $colorLineOdd;
+}
+
+.result-id {
+  float: left;
+  width: 30px;
+}
+
+.result-value {
+  float: left;
+}
